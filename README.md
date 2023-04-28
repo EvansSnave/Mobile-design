@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse! <a name="about-project"></a>
+# 📖 Mobile design <a name="about-project"></a>
 
-**Hello Microverse!** is a simple project where I learned best practices in coding.
+**Mobile design** is a simple project where I learned hot to make a resposive design web page.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,7 +46,6 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://reactjs.org/">HTML</a></li>
     <li><a href="https://reactjs.org/">CSS</a></li>
   </ul>
@@ -55,7 +54,6 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
 </details>
 
@@ -71,8 +69,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **This project was created using linters**
-- **It has a gitignore file**
-- **It has a license**
+- **It has responsive design**
+- **It was created using linters**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,9 +184,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **Responsice design**
-- [ ] **Animations**
-- [ ] **Database**
+- [ ] **Links to other sites**
+- [ ] **More pages**
+- [ ] **Grid design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
