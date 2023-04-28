@@ -60,7 +60,6 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -70,7 +69,7 @@
 
 - **This project was created using linters**
 - **It has responsive design**
-- **It was created using linters**
+- **It was created using flexbox**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
