@@ -1,0 +1,88 @@
+* {
+  font-family: poppings, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.burger {
+  image-rendering: pixelated;
+  margin: 10px 40px 0 0;
+  scale: 1.2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 375px;
+  min-height: 100vh;
+}
+
+.myLogo {
+  font-size: 18px;
+  line-height: 30%;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-height: 60px;
+  margin-top: 10px;
+  padding-left: 4vw;
+}
+
+.sectionOne {
+  background: url(Assests/header-shapes\ mobile.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4vw;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.medium {
+  margin-top: 4px;
+}
+
+.icons > * {
+  padding: 15px;
+  align-items: baseline;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  padding-top: 128px;
+  color: #172b4d;
+}
+
+.textIntro {
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  line-height: 120%;
+}
+
+.connect {
+  font-size: 16px;
+  line-height: 100%;
+  color: #7f8cff;
+  left: 3vw;
+  height: fit-content;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.twitter {
+  padding-left: 0;
+}
