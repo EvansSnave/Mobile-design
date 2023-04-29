@@ -7,13 +7,8 @@
 
 .burger {
   image-rendering: pixelated;
-  margin: 10px 20px 0 0;
-  width: 8%;
-  height: 10%;
-  max-height: 50px;
-  min-width: 20px;
-  min-height: 30px;
-  max-width: 50px;
+  margin: 10px 40px 0 0;
+  scale: 1.2;
 }
 
 body {
@@ -24,9 +19,10 @@ body {
 }
 
 .myLogo {
-  font-size: 200%;
+  font-size: 18px;
   line-height: 30%;
   color: #6070ff;
+  text-decoration: none;
 }
 
 .navbar {
@@ -53,7 +49,6 @@ body {
   flex-direction: row;
   list-style-type: none;
   padding-left: 0;
-  padding-top: 5%;
 }
 
 .medium {
@@ -61,29 +56,31 @@ body {
 }
 
 .icons > * {
-  padding: 2%;
+  padding: 15px;
   align-items: baseline;
 }
 
 .introTitle {
   font-size: 2.5rem;
-  padding-top: 5%;
+  padding-top: 128px;
+  color: #172b4d;
 }
 
 .textIntro {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 400;
   color: #344563;
   line-height: 120%;
-  padding-top: 5%;
 }
 
 .connect {
-  font-size: 30px;
+  font-size: 16px;
   line-height: 100%;
   color: #7f8cff;
   left: 3vw;
-  padding-top: 5%;
+  height: fit-content;
+  margin: 0;
+  padding-top: 3%;
 }
 
 .twitter {
