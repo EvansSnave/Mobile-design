@@ -76,7 +76,8 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, follow these steps. 
+To clone the repository click on the code blue button then copy the link and paste it in a code editor using a  git terminal with the git command git clone
 
 ### Prerequisites
 
@@ -140,8 +141,6 @@ To deploy this project clone the repository and go live.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **Links to other sites**
 - [ ] **More pages**
 - [ ] **Grid design**
@@ -171,20 +170,6 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for giving me the opportunity to learn here. Also my coding partners helped me a lot.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
