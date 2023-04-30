@@ -3,6 +3,7 @@
   font-weight: 700;
   font-style: normal;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 .burger {
@@ -16,6 +17,7 @@ body {
   padding: 0;
   min-width: 375px;
   min-height: 100vh;
+  background-color: #fff;
 }
 
 .myLogo {
@@ -37,17 +39,18 @@ body {
 .sectionOne {
   background: url(Assests/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   padding-left: 4vw;
+  padding-right: 3vw;
+  margin-bottom: 15vh;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
   padding-left: 0;
 }
 
@@ -85,4 +88,271 @@ body {
 
 .twitter {
   padding-left: 0;
+}
+
+.worksSection {
+  background-color: #e5e5e5;
+  display: grid;
+  grid-template-columns: 7% 86% 7%;
+  grid-template-rows: 60vh 60vh 60vh 60vh 5vh;
+  row-gap: 10vh;
+  padding-top: 8vh;
+}
+
+.firstCard {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.space {
+  background: #e5e5e5;
+  padding-top: 15vh;
+}
+
+.snapshot {
+  background: url(Assests/Snapshoot\ Portfolio.svg);
+  display: flex;
+  margin-top: 5%;
+  width: 295px;
+  height: 220px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tonic {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 1vh 0 0 5%;
+}
+
+.canopyList {
+  margin: 3% 0 5% 5%;
+  padding: 0;
+}
+
+.canopyList > * {
+  display: inline;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-right: 2vw;
+}
+
+.canopy {
+  color: #344563;
+}
+
+.description {
+  margin: 0 0 0 5%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.works {
+  margin: 5% 0 5% 0;
+  display: flex;
+}
+
+.htmlButton {
+  background: url(Assests/Taghtml.svg);
+  margin-left: 5%;
+  width: 57px;
+}
+
+.buttons {
+  height: 24px;
+  margin-right: 2%;
+  border-style: none;
+}
+
+.cssButton {
+  background: url(Assests/Tagcss.svg);
+  width: 49px;
+}
+
+.jsButton {
+  background: url(Assests/Tagjs.svg);
+  width: 92px;
+}
+
+.seeProject {
+  background-color: #fff;
+  align-self: flex-start;
+  width: 126px;
+  height: 48px;
+  margin: 0 0 3% 5%;
+  border-radius: 10px;
+  border: solid #7f8cff thin;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.seeProject:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.seeProject:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.snapshotTwo {
+  background: url(Assests/Snapshoot\ Portfolioavailability.svg);
+  display: flex;
+  margin-top: 5%;
+  width: 295px;
+  height: 220px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.stories {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 1vh 0 0 5%;
+}
+
+.snapshotThree {
+  background: url(Assests/Snapshoot\ Portfolioport.svg);
+  display: flex;
+  margin-top: 5%;
+  width: 295px;
+  height: 220px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.snapshotFourth {
+  background: url(Assests/Snapshoot\ Portfoliofourth.svg);
+  display: flex;
+  margin-top: 5%;
+  width: 295px;
+  height: 220px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lastCard {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.aboutMe {
+  background-color: #e5e5e5;
+}
+
+.introTwo {
+  margin: 10vh 0 0 0;
+  padding: 0;
+}
+
+.background {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  padding-left: 4vw;
+  padding-right: 3vw;
+  border-top-right-radius: 70px;
+  background-color: #fff;
+}
+
+.secondButton {
+  background-color: #fff;
+  align-self: flex-start;
+  width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  border: solid #7f8cff thin;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  gap: 10px;
+}
+
+.subIcons {
+  margin-bottom: 0;
+}
+
+.gitHub {
+  padding-left: 0;
+}
+
+.bird {
+  padding: 15px;
+}
+
+.secondButton:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.secondButton:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.abilities {
+  margin-top: 2vh;
+  padding-left: 5%;
+}
+
+.languages {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  padding: 2vh 0 2vh 0;
+}
+
+.subLanguages {
+  padding: 2vh 0 0 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.iconw {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5vh;
+  background-color: #f7f7f9;
+  border-radius: 5px;
+  height: 8vh;
+  width: 85vw;
+}
+
+.image {
+  margin: 0 2vw 0 2vw;
+}
+
+.droplet {
+  width: 6px;
+  height: 6px;
+  scale: 1.8;
+  float: right;
+  margin-right: 30px;
+}
+
+.textOne {
+  display: inline;
 }
