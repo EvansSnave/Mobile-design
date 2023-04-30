@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   padding-left: 4vw;
   padding-right: 3vw;
+  margin-bottom: 15vh;
 }
 
 .icons {
@@ -277,12 +278,14 @@ body {
   align-self: flex-start;
   width: 162px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: solid #7f8cff thin;
   color: #396df2;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  padding: 12px;
+  gap: 10px;
 }
 
 .subIcons {
