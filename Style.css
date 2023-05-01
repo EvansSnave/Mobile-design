@@ -167,19 +167,21 @@ body {
 }
 
 .buttons {
-  height: 24px;
-  margin-right: 2%;
+  float: left;
+  height: 25px;
   border-style: none;
 }
 
 .cssButton {
   background: url(Assests/Tagcss.svg);
   width: 49px;
+  margin-left: 2vw;
 }
 
 .jsButton {
   background: url(Assests/Tagjs.svg);
   width: 92px;
+  margin-left: 2vw;
 }
 
 .seeProject {
