@@ -358,3 +358,16 @@ body {
 .textOne {
   display: inline;
 }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("Assests/contact/contact\ form\ shapes-mobilecont.svg"), url("Assests/contact/Contact\ mecont.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto, cover;
+  margin-top: 22vh;
+  padding-top: 20vh;
+  height: auto;
+  background-position: right top 5vh, left top;
+}
