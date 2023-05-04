@@ -412,6 +412,7 @@ body {
   gap: 10px;
   align-self: center;
 }
+
 .email1,
 .name1 {
   margin-top: 2vh;
@@ -421,6 +422,7 @@ body {
   font-size: 17px;
   line-height: 20px;
 }
+
 .message {
   margin-top: 2vh;
   min-height: 170px;
@@ -428,16 +430,19 @@ body {
   font-size: 15px;
   line-height: 24px;
 }
+
 .email1::placeholder {
   color: #172B4D;
   padding-left: 8px;
   opacity: 80%;
 }
+
 .name1::placeholder {
   color: #172B4D;
   padding-left: 8px;
   opacity: 80%;
 }
+
 .message::placeholder {
   padding: 5px 0 0 8px;
   color: #B3BAC5;
