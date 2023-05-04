@@ -416,7 +416,7 @@ body {
 .email1,
 .name1 {
   margin-top: 2vh;
-  border: solid #7F8CFF thin;
+  border: solid #7f8cff thin;
   height: 48px;
   font-weight: 400;
   font-size: 17px;
@@ -432,19 +432,19 @@ body {
 }
 
 .email1::placeholder {
-  color: #172B4D;
+  color: #172b4d;
   padding-left: 8px;
   opacity: 80%;
 }
 
 .name1::placeholder {
-  color: #172B4D;
+  color: #172b4d;
   padding-left: 8px;
   opacity: 80%;
 }
 
 .message::placeholder {
   padding: 5px 0 0 8px;
-  color: #B3BAC5;
+  color: #b3baC5;
   opacity: 80%;
 }
