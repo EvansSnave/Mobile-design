@@ -167,19 +167,21 @@ body {
 }
 
 .buttons {
-  height: 24px;
-  margin-right: 2%;
+  float: left;
+  height: 25px;
   border-style: none;
 }
 
 .cssButton {
   background: url(Assests/Tagcss.svg);
   width: 49px;
+  margin-left: 2vw;
 }
 
 .jsButton {
   background: url(Assests/Tagjs.svg);
   width: 92px;
+  margin-left: 2vw;
 }
 
 .seeProject {
@@ -355,4 +357,101 @@ body {
 
 .textOne {
   display: inline;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("Assests/contact/contact\ form\ shapes-mobilecont.svg"), url("Assests/contact/Contact\ mecont.svg");
+  background-repeat: no-repeat;
+  background-size: auto auto, cover;
+  margin-top: 26vh;
+  padding-top: 13vh;
+  height: auto;
+  background-position: right top 5vh, left top;
+}
+
+.contactTitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin: 0;
+}
+
+.contactText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 0 10vw 0 10vw;
+  text-align: center;
+  color: #ebebff;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 0 15vh 0;
+  width: 75vw;
+  min-width: 250px;
+  max-width: 370px;
+}
+
+.buttonC {
+  background-color: #fff;
+  width: 162px;
+  height: 48px;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 2vh;
+  padding: 12px;
+  gap: 10px;
+  align-self: center;
+}
+
+.buttonC:hover {
+  scale: 1.5;
+  transition-duration: 1s;
+  background-color: #396df2;
+  color: #dfe1e6;
+}
+
+.email1,
+.name1 {
+  margin-top: 2vh;
+  border: solid #7f8cff thin;
+  height: 48px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.message {
+  margin-top: 2vh;
+  min-height: 170px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.email1::placeholder {
+  color: #172b4d;
+  padding-left: 8px;
+  opacity: 80%;
+}
+
+.name1::placeholder {
+  color: #172b4d;
+  padding-left: 8px;
+  opacity: 80%;
+}
+
+.message::placeholder {
+  padding: 5px 0 0 8px;
+  color: #b3bac5;
+  opacity: 80%;
 }
