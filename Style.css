@@ -413,6 +413,13 @@ body {
   align-self: center;
 }
 
+.buttonC:hover {
+  scale: 1.5;
+  transition-duration: 1s;
+  background-color: #396df2;
+  color: #dfe1e6;
+}
+
 .email1,
 .name1 {
   margin-top: 2vh;
