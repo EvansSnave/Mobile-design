@@ -15,9 +15,9 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 375px;
-  min-height: 100vh;
   background-color: #fff;
+  height: fit-content;
+  min-width: 375px;
 }
 
 .myLogo {
@@ -25,15 +25,18 @@ body {
   line-height: 30%;
   color: #6070ff;
   text-decoration: none;
+  width: 30vw;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  max-height: 60px;
-  margin-top: 10px;
-  padding-left: 4vw;
+  align-items: center;
+  padding: 20px 0 0 4vw;
+}
+
+.navigator {
+  display: inline;
 }
 
 .sectionOne {
@@ -120,7 +123,7 @@ body {
   height: 220px;
   align-self: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 .tonic {
@@ -267,7 +270,7 @@ body {
 
 .background {
   display: flex;
-  height: 80vh;
+  height: 85vh;
   flex-direction: column;
   padding-left: 4vw;
   padding-right: 3vw;
@@ -456,4 +459,222 @@ body {
 .buttonC:active {
   background-color: #2230d2;
   color: #fff;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+.mobile2 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.desk2 {
+  display: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.titles {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.subtitles {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.face {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.fulls {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.mess {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px){
+  .void {
+    margin: 1vh 10vw 0 10vw;
+  }
+
+  .myLogo {
+    padding-left:7vw;
+  }
+
+  .introTitle {
+    margin-top: 20vh;
+  }
+
+  .navbar {
+    position: fixed;
+    background: #fff;
+    width: 100vw;
+    z-index: 10;
+    padding: 20px 0 20px 50px;
+  }
+
+  .spaces {
+    width: 10vw;
+  }
+
+  .buttonMenu {
+    display: flex;
+  }
+
+  .navigator {
+    opacity: 0;
+  }
+
+  .dButton2 {
+    margin-right: 30px;
+  }
+
+  .buttonsA {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .firstCard {
+    flex-direction: row;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .snapshots {
+    width: 35vw;
+    background-size: 100% 100%;
+    margin: 2vh;
+    align-self: flex-start;
+    height:35vh;
+    background-repeat: no-repeat;
+  }
+
+  .section2 {
+    margin-top: 3vh;
+    align-self: flex-start;
+    width: 48vw;
+  }
+
+  .worksSection {
+    grid-template-rows: 50vh 50vh 50vh 50vh 5vh;
+  }
+
+  .snapshot {
+    background: url(Assests/Snapshoot\ Portfolionature.svg) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .snapshotTwo {
+    order: 2;
+    background: url(Assests/Snapshoot\ Portfolioart.svg) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .desk2 {
+    display: inline;
+  }
+
+  .mobile2 {
+    display: none;
+  }
+
+  .description {
+    width: 40vw;
+  }
+
+  .rubyButton {
+    background: url(Assests/Tag.svg);
+    margin-left: 5%;
+    width: 100px;
+  }
+
+  .snapshotThree {
+    background: url(Assests/Snapshoot\ Portfolio.svg) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .lastCard {
+    flex-direction: row;
+    align-items: center;
+    height: 45vh;
+  }
+
+  .snapshotFourth {
+    order: 3;
+    background: url(Assests/Snapshoot\ Portfolioava.png) no-repeat;
+    background-size: contain;
+  }
+
+  .about1 {
+    float: left;
+    display: inline;
+    width: 46vw;
+    margin-right: 4vw;
+  }
+
+  .about2 {
+    float: right;
+    display: inline;
+    width: 40vw;
+  }
+
+  .iconw {
+    width: 10vw;
+    height: 12vh;
+    flex-direction: column;
+    padding: 1vh;
+    align-items: flex-start;
+    margin-right: 2vw;
+  }
+
+  .image {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .background {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introTwo {
+    margin: 0;
+  }
+
+  .contactForm {
+    margin-top: 10vh;
+  }
+
+  .subLanguages {
+    display: flex;
+  }
+
+  .abilities {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .snapshotFourth {
+    margin-left: 15vw;
+  }
 }
