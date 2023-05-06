@@ -410,7 +410,6 @@ body {
   margin-top: 2vh;
   padding: 12px;
   gap: 10px;
-  align-self: center;
 }
 
 .email1,
@@ -447,4 +446,14 @@ body {
   padding: 5px 0 0 8px;
   color: #b3bac5;
   opacity: 80%;
+}
+
+.buttonC:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.buttonC:active {
+  background-color: #2230d2;
+  color: #fff;
 }
