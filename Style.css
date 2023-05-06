@@ -346,9 +346,7 @@ body {
   width: 85vw;
 }
 
-.image {
-  margin: 0 2vw 0 2vw;
-}
+.image { margin: 0 2vw 0 2vw; }
 
 .droplet {
   width: 6px;
@@ -358,9 +356,7 @@ body {
   margin-right: 30px;
 }
 
-.textOne {
-  display: inline;
-}
+.textOne { display: inline; }
 
 .contactForm {
   display: flex;
@@ -461,9 +457,7 @@ body {
   color: #fff;
 }
 
-.buttonMenu {
-  display: none;
-}
+.buttonMenu { display: none; }
 
 .mobile2 {
   font-weight: 600;
@@ -510,17 +504,11 @@ body {
 }
 
 @media screen and (min-width: 768px){
-  .void {
-    margin: 1vh 10vw 0 10vw;
-  }
+  .void { margin: 1vh 10vw 0 10vw; }
 
-  .myLogo {
-    padding-left:7vw;
-  }
+  .myLogo { padding-left:7vw; }
 
-  .introTitle {
-    margin-top: 20vh;
-  }
+  .introTitle { margin-top: 20vh; }
 
   .navbar {
     position: fixed;
@@ -530,21 +518,13 @@ body {
     padding: 20px 0 20px 50px;
   }
 
-  .spaces {
-    width: 10vw;
-  }
+  .spaces { width: 10vw; }
 
-  .buttonMenu {
-    display: flex;
-  }
+  .buttonMenu { display: flex; }
 
-  .navigator {
-    opacity: 0;
-  }
+  .navigator { opacity: 0; }
 
-  .dButton2 {
-    margin-right: 30px;
-  }
+  .dButton2 { margin-right: 30px; }
 
   .buttonsA {
     font-weight: 500;
@@ -574,9 +554,7 @@ body {
     width: 48vw;
   }
 
-  .worksSection {
-    grid-template-rows: 50vh 50vh 50vh 50vh 5vh;
-  }
+  .worksSection { grid-template-rows: 50vh 50vh 50vh 50vh 5vh; }
 
   .snapshot {
     background: url(Assests/Snapshoot\ Portfolionature.svg) no-repeat;
@@ -589,17 +567,11 @@ body {
     background-size: 100% 100%;
   }
 
-  .desk2 {
-    display: inline;
-  }
+  .desk2 { display: inline; }
 
-  .mobile2 {
-    display: none;
-  }
+  .mobile2 { display: none; }
 
-  .description {
-    width: 40vw;
-  }
+  .description { width: 40vw; }
 
   .rubyButton {
     background: url(Assests/Tag.svg);
@@ -656,25 +628,13 @@ body {
     justify-content: center;
   }
 
-  .introTwo {
-    margin: 0;
-  }
+  .introTwo { margin: 0; }
 
-  .contactForm {
-    margin-top: 10vh;
-  }
+  .contactForm { margin-top: 10vh; }
 
-  .subLanguages {
-    display: flex;
-  }
+  .subLanguages { display: flex; }
 
-  .abilities {
-    padding: 0;
-  }
+  .abilities { padding: 0; }
 }
 
-@media screen and (min-width: 1100px){
-  .snapshotFourth {
-    margin-left: 15vw;
-  }
-}
+@media screen and (min-width: 1100px){ .snapshotFourth { margin-left: 15vw; } }
