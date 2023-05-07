@@ -44,10 +44,6 @@ body {
   padding: 20px 0 0 4vw;
 }
 
-.navigator {
-  display: inline;
-}
-
 .sectionOne {
   background: url(Assests/header-shapes\ mobile.svg);
   background-repeat: no-repeat;
@@ -423,8 +419,8 @@ body {
 .buttonC:hover {
   scale: 1.5;
   transition-duration: 1s;
-  background-color: #396df2;
-  color: #dfe1e6;
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .email1,
@@ -461,11 +457,6 @@ body {
   padding: 5px 0 0 8px;
   color: #b3bac5;
   opacity: 80%;
-}
-
-.buttonC:hover {
-  background-color: #6070ff;
-  color: #fff;
 }
 
 .buttonC:active {
