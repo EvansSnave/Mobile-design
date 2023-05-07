@@ -8,8 +8,17 @@
 
 .burger {
   image-rendering: pixelated;
-  margin: 10px 40px 0 0;
   scale: 1.2;
+  order: 2;
+}
+
+.navigator {
+  display: inline;
+  margin-right: 2vh;
+}
+
+.spaces {
+  width: 70vh;
 }
 
 body {
@@ -48,7 +57,7 @@ body {
   flex-direction: column;
   padding-left: 4vw;
   padding-right: 3vw;
-  margin-bottom: 15vh;
+  margin: 20px 0 15vh 0;
 }
 
 .icons {
@@ -409,6 +418,13 @@ body {
   margin-top: 2vh;
   padding: 12px;
   gap: 10px;
+}
+
+.buttonC:hover {
+  scale: 1.5;
+  transition-duration: 1s;
+  background-color: #396df2;
+  color: #dfe1e6;
 }
 
 .email1,
