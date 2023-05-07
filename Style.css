@@ -416,12 +416,7 @@ body {
   gap: 10px;
 }
 
-.buttonC:hover {
-  scale: 1.5;
-  transition-duration: 1s;
-  background-color: #6070ff;
-  color: #fff;
-}
+
 
 .email1,
 .name1 {
