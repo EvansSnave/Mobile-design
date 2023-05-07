@@ -77,7 +77,8 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps. 
-To clone the repository click on the code blue button then copy the link and paste it in a code editor using a  git terminal with the git command git clone.
+To clone the repository click on the code blue button then copy the link https://github.com/EvansSnave/Mobile-design.gitand paste it in a code editor using a  git terminal with the git command git clone. You could also do it easily in VS code. Just click on clone repository from github and paste link
+
 
 ### Prerequisites
 
