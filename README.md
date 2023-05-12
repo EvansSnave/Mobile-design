@@ -118,6 +118,10 @@ Example command:
 ```
 --->
 
+## 👥 Live demo <a name="live"></a>
+
+To go to a live demo click on the following link: https://evanssnave.github.io/Mobile-design/
+
 ### Usage
 
 To run the project, execute the following command:
