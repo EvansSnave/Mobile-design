@@ -654,10 +654,30 @@ body {
   min-width: 375px;
   z-index: 100;
   position: absolute;
-  background: rgba(96, 112, 255, 1);
+  background-color: rgba(96, 112, 255, 1);
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
   display: none;
   flex-direction: column;
 }
 
+.cc {
+  margin: 40px 10vw 0 0;
+}
+
+.xIcon {
+  height: 30px;
+  width: 30px;
+  float: right;
+}
+
+.hiddenList > li {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 40px;
+  margin-left: 5vw;
+  width: fit-content;
+  z-index: 200;
+}
