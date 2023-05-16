@@ -661,24 +661,3 @@ body {
   flex-direction: column;
 }
 
-.cc {
-  margin: 40px 10vw 0 0;
-}
-
-.xIcon {
-  height: 30px;
-  width: 30px;
-  float: right;
-}
-
-.hiddenList > li {
-  color: #fff;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  margin-top: 40px;
-  margin-left: 5vw;
-  width: fit-content;
-  z-index: 200;
-}
-
