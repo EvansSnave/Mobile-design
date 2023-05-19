@@ -27,7 +27,6 @@ body {
   background-color: #fff;
   height: fit-content;
   min-width: 375px;
-
 }
 
 .myLogo {
@@ -517,7 +516,7 @@ body {
 
   .myLogo { padding-left: 7vw; }
 
-  .burger {display: none;}
+  .burger { display: none; }
 
   .introTitle { margin-top: 20vh; }
 
