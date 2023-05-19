@@ -72,6 +72,8 @@
 - **PopUp windows**
 - **Buttons to see live demo**
 - **Form validation**
+- **Updated HTML and CSS code**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
