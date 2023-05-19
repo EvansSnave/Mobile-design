@@ -69,6 +69,8 @@
 - **This project was created using linters**
 - **It has responsive design**
 - **It was created using flexbox**
+- **PopUp windows**
+- **Buttons to see live demo**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,9 +148,10 @@ To deploy this project clone the repository and go live.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Links to other sites**
-- [ ] **More pages**
-- [ ] **Grid design**
+-  **Links to other sites**
+-  **More pages**
+-  **Grid design**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

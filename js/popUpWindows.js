@@ -74,11 +74,11 @@ const createSection = ()=>{
   let section = document.querySelector(".worksSection");
   for (let card = cards.length -1; card >= 0; card -=1){
     let technologies = cards[card].technologies.map((x) => `<li class="buttons">${x}</li>`).join('');
-    const subtitles = cards[card].subtitle.map(x => `<li>${x}</li>`);
+    const subtitles = cards[card].subtitle.map(x => `${x}`);
     let created = `
     <div class="space"></div>
     <div class="firstCard">
-      <div class="snapshot snapshots"></div>
+      <div class="snapshot${card} snapshots"></div>
       <div class="section2">
         <h3 class="tonic">${cards[card].name}</h3>
         <ul class="canopyList">

@@ -121,7 +121,7 @@ body {
   padding-top: 15vh;
 }
 
-.snapshot {
+.snapshot0 {
   background: url(Assests/Snapshoot\ Portfolio.svg);
   display: flex;
   margin-top: 5%;
@@ -155,7 +155,10 @@ body {
 
 .canopy {
   color: #344563;
-  margin: 0;
+  margin-right: 2vw;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .description {
@@ -174,6 +177,18 @@ body {
   background: url(Assests/Taghtml.svg);
   margin-left: 5%;
   width: 57px;
+}
+
+.backEnd {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.year {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .buttons {
@@ -228,7 +243,7 @@ body {
   color: #fff;
 }
 
-.snapshotTwo {
+.snapshot1 {
   background: url(Assests/Snapshoot\ Portfolioavailability.svg);
   display: flex;
   margin-top: 5%;
@@ -246,7 +261,7 @@ body {
   margin: 1vh 0 0 5%;
 }
 
-.snapshotThree {
+.snapshot2 {
   background: url(Assests/Snapshoot\ Portfolioport.svg);
   display: flex;
   margin-top: 5%;
@@ -257,7 +272,7 @@ body {
   background-size: contain;
 }
 
-.snapshotFourth {
+.snapshot3 {
   background: url(Assests/Snapshoot\ Portfoliofourth.svg);
   display: flex;
   margin-top: 5%;
@@ -522,6 +537,10 @@ body {
   line-height: 24px;
 }
 
+.section2 {
+  padding-right: 5vw;;
+}
+
 @media screen and (min-width: 768px) {
   .void { margin: 1vh 10vw 0 10vw; }
 
@@ -577,12 +596,12 @@ body {
 
   .worksSection { grid-template-rows: 50vh 50vh 50vh 50vh 5vh; }
 
-  .snapshot {
+  .snapshot0 {
     background: url(Assests/Snapshoot\ Portfolionature.svg) no-repeat;
     background-size: 100% 100%;
   }
 
-  .snapshotTwo {
+  .snapshot1 {
     order: 2;
     background: url(Assests/Snapshoot\ Portfolioart.svg) no-repeat;
     background-size: 100% 100%;
@@ -600,7 +619,7 @@ body {
     width: 100px;
   }
 
-  .snapshotThree {
+  .snapshot2 {
     background: url(Assests/Snapshoot\ Portfolio.svg) no-repeat;
     background-size: 100% 100%;
   }
@@ -611,7 +630,7 @@ body {
     height: 45vh;
   }
 
-  .snapshotFourth {
+  .snapshot3 {
     order: 3;
     background: url(Assests/Snapshoot\ Portfolioava.png) no-repeat;
     background-size: contain;
@@ -658,7 +677,7 @@ body {
   .abilities { padding: 0; }
 }
 
-@media screen and (min-width: 1100px) { .snapshotFourth { margin-left: 15vw; } }
+@media screen and (min-width: 1100px) { .snapshot3 { margin-left: 5vw; } }
 
 .hiddenMenu {
   width: 100vw;
