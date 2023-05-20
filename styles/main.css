@@ -11,12 +11,12 @@ html {
   font-size: 62.5%;
 }
 
-a {
+a:visited {
+  color: #6070ff;
   text-decoration: none;
 }
 
-a:visited {
-  color: #6070ff;
+a {
   text-decoration: none;
 }
 
@@ -45,6 +45,12 @@ header {
   background-color: white;
 }
 
+.menu-mobile-version.active {
+  visibility: visible;
+  z-index: 10;
+  display: block;
+}
+
 .menu-mobile-version {
   display: none;
   left: 0;
@@ -53,23 +59,6 @@ header {
   background-color: white;
   position: fixed;
   visibility: hidden;
-}
-
-.menu-mobile-version.active {
-  visibility: visible;
-  z-index: 10;
-  display: block;
-}
-
-.list-navigator {
-  display: flex;
-  flex-direction: column;
-  height: 13rem;
-  position: fixed;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 4.5rem;
-  margin-left: 2.8rem;
 }
 
 .list-navigator li {
@@ -104,6 +93,17 @@ header {
   height: 5%;
 }
 
+.list-navigator {
+  display: flex;
+  flex-direction: column;
+  height: 13rem;
+  position: fixed;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4.5rem;
+  margin-left: 2.8rem;
+}
+
 .guide {
   position: absolute;
   bottom: 2rem;
@@ -122,21 +122,28 @@ header {
 }
 
 .navigator.active ~ .menu-mobile-version {
-  display: block;
   background-color: #6070ff;
   width: 100%;
+  display: block;
   top: 0;
 }
 
 .main-section.inactive {
-  filter: blur(5px);
   position: fixed;
   pointer-events: none;
+  filter: blur(5px);
 }
 
 @media screen and (min-width: 768px) {
   .navigator {
     display: none;
+  }
+
+  .navigator.active ~ .menu-mobile-version {
+    color: white;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
   }
 
   .menu-mobile-version {
@@ -147,14 +154,7 @@ header {
     top: 0;
     visibility: visible;
   }
-
-  .navigator.active ~ .menu-mobile-version {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    background-color: white;
-  }
-
+ 
   .logo {
     margin-top: 1rem;
     visibility: visible;
@@ -172,15 +172,15 @@ header {
   }
 
   .list-navigator {
+    font-weight: 500;
+    width: 15%;
+    margin-left: 70%;
+    justify-content: space-between;
     display: flex;
     gap: 2rem;
     flex-direction: row;
     margin-top: 2rem;
     cursor: pointer;
-    font-weight: 500;
-    width: 15%;
-    margin-left: 70%;
-    justify-content: space-between;
   }
 
   .list-navigator li {
@@ -198,14 +198,14 @@ header {
   display: flex;
   min-height: 100vh;
   margin: 2.5rem;
-  padding-top: 3.5rem;
-  color: #172b4d;
-  background-image: url(../images/header-mobile.svg);
-  background-size: contain;
   background-repeat: no-repeat;
   flex-direction: column;
   align-items: left;
   text-align: left;
+  padding-top: 3.5rem;
+  color: #172b4d;
+  background-image: url(../images/header-mobile.svg);
+  background-size: contain;
 }
 
 .my_portfolio__title {
@@ -223,11 +223,11 @@ header {
 }
 
 .my_portfolio__icons {
-  display: flex;
-  width: 60vw;
   justify-content: flex-start;
   list-style: none;
   margin-top: 1rem;
+  display: flex;
+  width: 60vw;
   padding: 1rem;
 }
 
@@ -247,11 +247,11 @@ header {
 
 @media screen and (min-width: 768px) {
   .my_portfolio {
-    background-image: url(../images/desktop/Header\ bg.svg);
-    background-size: cover auto;
     margin-right: 2rem;
     margin-left: 2rem;
     margin-top: 7rem;
+    background-image: url(../images/desktop/Header\ bg.svg);
+    background-size: cover auto;
   }
 
   .my_portfolio__description {
@@ -331,41 +331,41 @@ header {
 }
 
 .card__details {
+  justify-content: space-around;
+  align-items: flex-start;
   height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 
 .card__text {
-  font-size: 2.4rem;
-  font-weight: 800;
-  padding-left: 20px;
   padding-bottom: 0;
   color: #172b4d;
   text-transform: capitalize;
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding-left: 20px;
   align-items: flex-start;
 }
 
 .card__list,
 .about__list {
   width: 100%;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: hidden;
   margin-left: 15px;
+  justify-content: space-evenly;
 }
 
 .card__canopy-list li::before {
   list-style: circle;
-  content: "\2022";
-  color: gray;
   font-weight: bold;
   display: inline-block;
   width: 1.5rem !important;
   height: 1.5rem !important;
   margin-left: 1rem;
+  content: "\2022";
+  color: gray;
   left: -18px;
   top: 50%;
 }
@@ -373,6 +373,12 @@ header {
 .card__canopy {
   justify-content: flex-start;
   padding-left: 20px;
+}
+
+.card__canopy-list {
+  display: flex;
+  margin: 10px;
+  padding: 0;
 }
 
 .card__canopy-header {
@@ -387,26 +393,11 @@ header {
   color: #172b4d;
 }
 
-.card__canopy-list {
-  display: flex;
-  margin: 10px;
-  padding: 0;
-}
-
 .card__canopy-list li {
   margin-right: 10px;
   font-size: 13px;
   color: gray;
   font-weight: 600;
-}
-
-.card__canopy-text {
-  font-size: 15px;
-  color: #344563;
-  font-weight: 400;
-  line-height: 24px;
-  width: 295px;
-  height: 76px;
 }
 
 .card__list > li {
@@ -420,13 +411,18 @@ header {
   margin-right: 10px;
 }
 
+.card__canopy-text {
+  font-size: 15px;
+  color: #344563;
+  font-weight: 400;
+  line-height: 24px;
+  width: 295px;
+  height: 76px;
+}
+
 .card__imgbox:hover img {
   transform: scale(1.1);
-
-  /* increase the size by 10% */
   transition: transform 0.3s ease-in-out;
-
-  /* add a smooth transition effect */
 }
 
 @media screen and (min-width: 768px) {
@@ -436,21 +432,21 @@ header {
     justify-content: center;
   }
 
-  .work {
-    justify-content: center;
-    margin-top: 220px;
-    display: block;
-  }
-
   .card {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
     border: 2px solid #d0d9d4;
     border-radius: 24px;
     margin: 2%;
     overflow: hidden;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .work {
+    justify-content: center;
+    margin-top: 220px;
+    display: block;
   }
 
   .card:nth-child(2n) {
@@ -460,14 +456,6 @@ header {
   .card__imgbox {
     height: 100%;
     width: 47%;
-  }
-
-  .card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding-block: 2%;
-    border-radius: 8px;
   }
 
   .card__details {
@@ -485,6 +473,14 @@ header {
     font-size: 4rem;
     font-weight: 700;
     font-family: Poppins, sans-serif;
+  }
+
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-block: 2%;
+    border-radius: 8px;
   }
 
   .card__canopy-header {
@@ -535,7 +531,6 @@ header {
   }
 }
 
-/* About section */
 .about {
   padding: 1.2rem;
   padding-left: 1rem;
@@ -612,9 +607,6 @@ header {
 .language_list_technologies {
   display: flex;
   border-radius: 8px;
-  border: 1px solid #f7f7f9;
-  padding: 1rem;
-  gap: 16px;
   font-size: 15px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -624,6 +616,9 @@ header {
   width: 303px;
   margin-bottom: 12px;
   background-color: #f7f7f9;
+  border: 1px solid #f7f7f9;
+  padding: 1rem;
+  gap: 16px;
   height: 67px;
 }
 
@@ -631,19 +626,13 @@ header {
 .skill__list,
 .framework__list {
   display: flex;
-  justify-content: space-between;
   font-weight: 600;
   font-size: 20px;
   width: 327px;
+  justify-content: space-between;
   height: 24px;
   line-height: 24px;
   color: #344563;
-}
-
-.fas {
-  margin-right: 50px;
-  margin-top: 3px;
-  color: #acb7c3;
 }
 
 .skill__list {
@@ -659,6 +648,11 @@ header {
 .framework__list span,
 .language_technologies {
   padding-left: 10px;
+}
+.fas {
+  margin-right: 50px;
+  margin-top: 3px;
+  color: #acb7c3;
 }
 
 @media screen and (min-width: 768px) {
@@ -696,23 +690,13 @@ header {
 
   .language_technologies {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
     width: 414px;
     height: 144px;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
-  }
-
-  .language_list_technologies {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: #f7f7f9;
-    width: 122px;
-    height: 120px;
   }
 
   .fas {
@@ -730,6 +714,16 @@ header {
 
   .about__btn {
     margin-top: 3rem;
+  }
+
+  .language_list_technologies {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f7f7f9;
+    width: 122px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 120px;
   }
 
   .language__list .fas {
@@ -752,24 +746,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/Contact_Form/shapes.svg'), url('../images/Contact_Form/basic_background.svg');
   background-repeat: no-repeat;
   background-size: auto auto, cover;
   margin-top: 22vh;
+  background-image: url('../images/Contact_Form/shapes.svg'), url('../images/Contact_Form/basic_background.svg');
   padding-top: 20vh;
-
   height: auto;
   background-position: right top 5vh, left top;
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  width: 90%;
-  box-sizing: border-box;
 }
 
 .contact__form__title {
@@ -783,16 +766,26 @@ header {
   line-height: 52px;
 }
 
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 90%;
+  box-sizing: border-box;
+}
+
 .contact__form__desc {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
   width: 327px;
   height: 137px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .contact__name input,
@@ -815,11 +808,11 @@ header {
 .contact__name input,
 .contact__email input {
   width: 100%;
-  height: 48px;
   padding: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 1rem;
   border: 1px solid #cfd8dc;
+  height: 48px;
 }
 
 .contact__message textarea {
@@ -833,9 +826,6 @@ header {
 
 .contact__btn {
   font-family: Poppins, sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
   padding: 1rem;
   color: #396df2;
   margin-top: 15px;
@@ -843,6 +833,9 @@ header {
   background-color: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
   margin-left: 0;
 }
 
@@ -854,22 +847,6 @@ header {
 .contact__btn:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   cursor: pointer;
-}
-
-.contact__name input::placeholder,
-.contact__email input::placeholder,
-.contact__name input,
-.contact__email input,
-.contact__message textarea {
-  font-family: Poppins, sans-serif;
-  top: calc(50% - 18px / 2);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #172b4d;
 }
 
 .contact__message textarea::placeholder {
@@ -887,6 +864,22 @@ header {
   width: 100%;
 }
 
+.contact__name input::placeholder,
+.contact__email input::placeholder,
+.contact__name input,
+.contact__email input,
+.contact__message textarea {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  top: calc(50% - 18px / 2);
+  color: #172b4d;
+}
+
 @media screen and (min-width: 768px) {
   .contact {
     background-image: url('../images/desktop/contact_shapes.svg'), url('../images/desktop/contact_background.svg');
@@ -898,12 +891,12 @@ header {
 
   .contact__form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 2vh;
     padding-bottom: 10vh;
     width: 90%;
     box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact__name,
@@ -922,6 +915,12 @@ header {
     height: 48px;
     margin-right: 0;
   }
+  
+  .error-message {
+    color: red;
+    font-size: 1.6rem;
+    width: 40rem;
+  }
 
   .contact__form__desc {
     width: 569px;
@@ -933,9 +932,4 @@ header {
     height: 170px;
   }
 
-  .error-message {
-    color: red;
-    font-size: 1.6rem;
-    width: 40rem;
-  }
 }

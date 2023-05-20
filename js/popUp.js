@@ -1,13 +1,13 @@
-const projects = [
+let y = [
   {
     name: 'Tonic',
     description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/project_screenshots/Snapshoot Portfolio.svg',
     technologies: ['Html', 'Ruby on rails', 'css', 'javaScript'],
-    liveLink: 'https://example.com',
-    sourceLink: 'https://github.com/EvansSnave/Mobile-design/tree/main',
-    projectCover: './images/project_screenshots/Snapshoot Portfolio.svg',
-    fullDescription: `Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.`,
+    live: 'https://example.com',
+    source: 'https://github.com/EvansSnave/Mobile-design/tree/main',
+    imageS: './images/project_screenshots/Snapshoot Portfolio.svg',
+    description: `Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.`,
     canopy: ['Full Stack Dev', 2015],
   },
   {
@@ -15,74 +15,22 @@ const projects = [
     description:"Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     image: './images/project_screenshots/Snapshoot Portfolio (1).svg',
     technologies: ['Html', 'Ruby on rails', 'css', 'javaScript'],
-    liveLink: 'https://example.com',
-    sourceLink: 'https://github.com/EvansSnave/Mobile-design/tree/main',
-    projectCover: './images/project_screenshots/Snapshoot Portfolio (1).svg',
-    fullDescription: `Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.`,
+    live: 'https://example.com',
+    source: 'https://github.com/EvansSnave/Mobile-design/tree/main',
+    imageS: './images/project_screenshots/Snapshoot Portfolio (1).svg',
+    description: `Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.`,
     canopy: ['Back End Dev', 2015],
   },
 ];
 
-function openPopup(index) {
-  const section = document.querySelector('.work');
-  const overlay = document.querySelector('.overlay');
-  const technologiesList = projects[index].technologies.map((tech) => `<li>${tech}</li>`).join('');
-  const canopyList = projects[index].canopy.map((elem) => `<li>${elem}</li>`).join('');
-  const popupHtml = `
-        <div class="popup">
-            <h3 class="popup__name">${projects[index].name}</h3>
-            <button type="button" class="popup__exit">
-                <img src="images/icons8-close_black.svg" alt="">
-            </button>
-            <div class="card__canopy-header popup__canopy">
-                <h4 class="card__canopy-title">CANOPY</h4>
-                <ul class="card__canopy-list popup__canopy-list">
-                    ${canopyList}
-                </ul>
-            </div>
-            <img src="./images/desktop/Snapshoot Portfolio.svg" alt="" class="popup__img">
-            <div class="popup__details">
-                <p class="popup__description">
-                    ${projects[index].fullDescription}
-                </p>
-                <div class="popup__tech-buttons">
-                    <ul class="card__list popup__tech">
-                        ${technologiesList}
-                    </ul>
-                    <div class="gray-line"></div>
-                    <div class="popup__buttons">
-                        <a href="${projects[index].liveLink}" class="btn btn--green" target="_blank">See Live
-                                <img src="images/see-live-icon.svg" alt=""></a>
-                        <a href="${projects[index].sourceLink}" class="btn btn--green" target="_blank">See Source 
-                                <img src="images/see-source-icon.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `;
-
-  section.insertAdjacentHTML('afterbegin', popupHtml);
-  overlay.classList.remove('hidden');
-  const closePopupIcon = document.querySelector('.popup__exit');
-  const popup = document.querySelector('.popup');
-  const body = document.querySelector('body');
-  body.classList.add('popup-open');
-  closePopupIcon.addEventListener('click', () => {
-    popup.classList.add('hidden');
-    overlay.classList.add('hidden');
-    body.classList.remove('popup-open');
-  });
-}
-
-function createCard() {
-  const cardContainer = document.querySelector('.card__container');
-  for (let index = projects.length - 1; index >= 0; index -= 1) {
-    const project = projects[index];
-    const technologiesList = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
-    const card = `
-            <li class="card">
+function cardcreation() {
+  let cardContainer = document.querySelector('.card__container');
+  for (let index = y.length - 1; index >= 0; index -= 1) {
+    let project = y[index];
+    let list = project.technologies.map((tech) => `<li>${tech}</li>`).join('');
+    let card = `<li class="card">
                 <div class="card__imgbox">
-                    <img src="${project.projectCover}" alt="Lock-app"
+                    <img src="${project.imageS}" alt="Lock-app"
                      class="card__img">
                 </div>
                 <div class="card__details">
@@ -97,9 +45,7 @@ function createCard() {
                         </div>
                     <p class="card__canopy-text">${project.description}</p>
                     </div>
-                    <ul class="card__list">
-                         ${technologiesList}
-                    </ul>
+                    <ul class="card__list">${list}</ul>
                     <button
                         class="btn btn--green car__btn">See
                         Project</button>
@@ -109,11 +55,62 @@ function createCard() {
   }
 }
 
+function pops(index) {
+  let www = document.querySelector('.work');
+  let overlay = document.querySelector('.overlay');
+  let list = y[index].technologies.map((tech) => `<li>${tech}</li>`).join('');
+  let canop = y[index].canopy.map((elem) => `<li>${elem}</li>`).join('');
+  let htm = `
+        <div class="qwq">
+            <h3 class="qwq__name">${y[index].name}</h3>
+            <button type="button" class="qwq__exit">
+                <img src="images/icons8-close_black.svg" alt="">
+            </button>
+            <div class="card__canopy-header qwq__canopy">
+                <h4 class="card__canopy-title">CANOPY</h4>
+                <ul class="card__canopy-list qwq__canopy-list">
+                    ${canop}
+                </ul>
+            </div>
+            <img src="./images/desktop/Snapshoot Portfolio.svg" alt="" class="qwq__img">
+            <div class="qwq__details">
+                <p class="qwq__description">
+                    ${y[index].description}
+                </p>
+                <div class="qwq__tech-buttons">
+                    <ul class="card__list qwq__tech">
+                        ${list}
+                    </ul>
+                    <div class="gray-line"></div>
+                    <div class="qwq__buttons">
+                        <a href="${y[index].live}" class="btn btn--green" target="_blank">See Live
+                                <img src="images/see-live-icon.svg" alt=""></a>
+                        <a href="${y[index].source}" class="btn btn--green" target="_blank">See Source 
+                                <img src="images/see-source-icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+  www.insertAdjacentHTML('afterbegin', htm);
+  overlay.classList.remove('hidden');
+  let closedS = document.querySelector('.qwq__exit');
+  let qwq = document.querySelector('.qwq');
+  let body = document.querySelector('body');
+  body.classList.add('qwq-open');
+  closedS.addEventListener('click', () => {
+    qwq.classList.add('hidden');
+    overlay.classList.add('hidden');
+    body.classList.remove('qwq-open');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  createCard();
+  cardcreation();
   document.querySelectorAll('.work .btn').forEach((btn, index) => {
     btn.addEventListener('click', () => {
-      openPopup(index);
+      pops(index);
     });
   });
 });
