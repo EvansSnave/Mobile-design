@@ -3,7 +3,7 @@ const projects = [
     name: 'Tonic',
     description:'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: './images/project_screenshots/Snapshoot Portfolio.svg',
-    technologies: ['Node.js', 'Express.js', 'JWT', 'Redis'],
+    technologies: ['Html', 'Ruby on rails', 'css', 'javaScript'],
     liveLink: 'https://example.com',
     sourceLink: '',
     projectCover: './images/project_screenshots/Snapshoot Portfolio.svg',
@@ -14,7 +14,7 @@ const projects = [
     name: 'Multi-Post Stories',
     description:"Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     image: './images/project_screenshots/Snapshoot Portfolio (1).svg',
-    technologies: ['Node.js', 'TypeScript', 'Docker'],
+    technologies: ['Html', 'Ruby on rails', 'css', 'javaScript'],
     liveLink: 'https://example.com',
     sourceLink: '',
     projectCover: './images/project_screenshots/Snapshoot Portfolio (1).svg',
@@ -92,7 +92,7 @@ function createCard() {
                             <h4 class="card__canopy-title">CANOPY</h4>
                             <ul class="card__canopy-list">
                                 <li>Backed Dev</li>
-                                <li>2023</li>
+                                <li>2015</li>
                             </ul>
                         </div>
                     <p class="card__canopy-text">${project.description}</p>
