@@ -7,16 +7,16 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
 
 a:visited {
   color: #6070ff;
-  text-decoration: none;
-}
-
-a {
   text-decoration: none;
 }
 
@@ -139,13 +139,6 @@ header {
     display: none;
   }
 
-  .navigator.active ~ .menu-mobile-version {
-    color: white;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-  }
-
   .menu-mobile-version {
     display: flex;
     flex-direction: row;
@@ -154,7 +147,14 @@ header {
     top: 0;
     visibility: visible;
   }
- 
+
+  .navigator.active ~ .menu-mobile-version {
+    color: white;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+  }
+
   .logo {
     margin-top: 1rem;
     visibility: visible;
@@ -300,7 +300,6 @@ header {
   padding-bottom: 10rem;
   display: flex;
   justify-content: center;
-
 }
 
 .card__container {
@@ -594,7 +593,6 @@ header {
   padding-right: 4rem;
 }
 
-
 .drop__down {
   display: flex;
   flex-direction: column;
@@ -649,6 +647,7 @@ header {
 .language_technologies {
   padding-left: 10px;
 }
+
 .fas {
   margin-right: 50px;
   margin-top: 3px;
@@ -915,7 +914,7 @@ header {
     height: 48px;
     margin-right: 0;
   }
-  
+
   .error-message {
     color: red;
     font-size: 1.6rem;
@@ -931,5 +930,4 @@ header {
     width: 447px;
     height: 170px;
   }
-
 }
