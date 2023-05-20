@@ -7,7 +7,7 @@ const projects = [
     image: './images/project_screenshots/Snapshoot Portfolio.svg',
     technologies: ['Node.js', 'Express.js', 'JWT', 'Redis'],
     liveLink: 'https://example.com',
-    sourceLink: 'https://github.com/ahmedeid6842/auth_session-token_',
+    sourceLink: '',
     projectCover: './images/project_screenshots/Snapshoot Portfolio.svg',
     fullDescription: `
             Lock uses REST APIs to protect endpoints by using two techniques: tokens and sessions.
@@ -23,7 +23,7 @@ const projects = [
     image: './images/project_screenshots/Snapshoot Portfolio (1).svg',
     technologies: ['Node.js', 'TypeScript', 'Docker'],
     liveLink: 'https://example.com',
-    sourceLink: 'https://github.com/ahmedeid6842/Blog',
+    sourceLink: '',
     projectCover: './images/project_screenshots/Snapshoot Portfolio (1).svg',
     fullDescription: `
             Affable is a powerful platform that allows you to manage your blog with
