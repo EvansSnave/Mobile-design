@@ -8,7 +8,7 @@ const projects = [
     sourceLink: 'https://github.com/EvansSnave/Mobile-design/tree/main',
     projectCover: './images/project_screenshots/Snapshoot Portfolio.svg',
     fullDescription: `Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.`,
-    canopy: ['Back End Dev', 2015],
+    canopy: ['Full Stack Dev', 2015],
   },
   {
     name: 'Multi-Post Stories',
