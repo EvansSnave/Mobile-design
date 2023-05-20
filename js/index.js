@@ -1,50 +1,25 @@
-let burger = document.querySelector('.navigator');
-let body = document.body;
-let navbar = document.querySelector('.navbar');
-let newMenu = document.querySelector('.hiddenMenu');
-let xButton = document.querySelector('.xIcon');
-let portfolio = document.querySelector('.portfolioL');
-let about = document.querySelector('.aboutL');
-let contact = document.querySelector('.contactL');
+const hamburgerButton = document.querySelector('.navigator');
+const mainContent = document.querySelector('.main-section');
+const closeMenu = document.querySelector('.closing');
+const mobile = document.querySelector('.menu-mobile-version');
+const mobileMenuAnchors = document.querySelectorAll('.menu-mobile-version a');
 
-burger.addEventListener('click', () => {
-  if (window.matchMedia('(min-width: 786px)')) {
-    newMenu.style.display = 'flex';
-    body.style.overflow = 'hidden';
-  }
+hamburgerButton.addEventListener('click', () => {
+  hamburgerButton.classList.toggle('active');
+  mainContent.classList.toggle('inactive');
+  mobile.classList.toggle('active');
 });
 
-xButton.addEventListener('click', () => {
-  body.style.overflow = 'auto';
-  newMenu.style.display = 'none';
-});
-
-portfolio.addEventListener('click', () => {
-  body.style.overflow = 'auto';
-  newMenu.style.display = 'none';
-  window.scrollBy({
-    top: 870,
-    left: 0,
-    behavior: 'smooth',
+mobileMenuAnchors.forEach((anchor) => {
+  anchor.addEventListener('click', () => {
+    hamburgerButton.classList.remove('active');
+    mainContent.classList.remove('inactive');
+    mobile.classList.remove('active');
   });
 });
 
-about.addEventListener('click', () => {
-  body.style.overflow = 'auto';
-  newMenu.style.display = 'none';
-  window.scrollBy({
-    top: 3400,
-    left: 0,
-    behavior: 'smooth',
-  });
-});
-
-contact.addEventListener('click', () => {
-  body.style.overflow = 'auto';
-  newMenu.style.display = 'none';
-  window.scrollBy({
-    top: 5000,
-    left: 0,
-    behavior: 'smooth',
-  });
+closeMenu.addEventListener('click', () => {
+  hamburgerButton.classList.toggle('active');
+  mainContent.classList.toggle('inactive');
+  mobile.classList.toggle('active');
 });
