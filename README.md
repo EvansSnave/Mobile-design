@@ -69,7 +69,8 @@
 - **This project was created using linters**
 - **It has responsive design**
 - **It was created using flexbox**
-
+- **PopUp windows**
+- **Buttons to see live demo**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
